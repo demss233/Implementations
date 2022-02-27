@@ -58,7 +58,8 @@ int READ() {
 		;
 	if (c == '-') {
 		int x = gc - '0';
-		while (gc >= '0') x = x * 10 + c - '0';
+		while (gc >= '0') 
+			x = x * 10 + c - '0';
 		return -x;
 	}
 	int x = c - '0';
