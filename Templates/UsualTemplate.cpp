@@ -24,13 +24,15 @@ using ld = long double;
 #define sorted(v) is_sorted(all(v))
 #define ld lower_bound
 #define pqueue priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
+#define pop pop_back
+#define ar array
 
 #define debug(x) cout << #x << " " << x << endl
 #define debug_(v, n) cout << "[ "; for(int i = 0; i<n; ++i) cout << v[i] << " "; cout << "]";  
 #define debug__(v) cout << v.f << " " << v.s << endl;
 
 #define gcd(x, y) __gcd(x, y)
-#define lcm(x, y) a / (gcd(x, y)) * b
+#define lcm(x, y) x / (gcd(x, y)) * y
 
 typedef pair<int, int> pi;
 typedef vector<int> vi;
@@ -38,14 +40,19 @@ typedef set<int> si;
 typedef vector<string> vs;
 typedef vector<ll> vl;
 typedef map<int, int> mint;
-typedef map<char, int> fmap;
+typedef unordered_map<char, int> fmap;
 
+int dx[8] = {1, 1, 1, 0, 0, -1, -1,-1};
+int dy[8] = {1,-1, 0, 1, -1, 1, -1, 0};
 
 mt19937 rng(chrono::steady_clock::now().time_since_epoch().count()); 
 
 int main() {
-	freopen("input.txt", "r", stdin);
-    // cin.tie(NULL)->sync_with_stdio(0);
-    // cin.exceptions(cin.failbit);
+    cin.tie(NULL)->sync_with_stdio(0);
+    cin.exceptions(cin.failbit);
 
+    int t;
+    cin >> t;
+
+    while(t--) solve();
 }
