@@ -51,6 +51,7 @@ char GETC() {
 		;
 	return c;
 }
+
 int READ() {
 	char c;
 	while (gc < '-')
