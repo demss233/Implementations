@@ -11,8 +11,6 @@ using namespace chrono;
 using ll = long long;
 using ld = long double;
 
-
-
 #define sz(x) int(x.size())
 #define all(x) x.begin(), x.end()
 #define ALL(x, n) x, x+n
