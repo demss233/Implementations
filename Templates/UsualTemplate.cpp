@@ -22,7 +22,6 @@ using ld = long double;
 #define pb push_back
 #define pf push_front
 #define sorted(v) is_sorted(all(v))
-#define ld lower_bound
 #define pqueue priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
 #define pop pop_back
 #define ar array
